@@ -1,0 +1,199 @@
+/* Styles généraux pour le corps de la page */
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #1e1e2f; /* Fond sombre */
+    color: #fff; /* Texte blanc */
+}
+
+/* Conteneur principal */
+.container {
+    width: 90%;
+    margin: 0 auto;
+}
+
+/* En-tête */
+header {
+    text-align: center;
+    padding: 20px 0;
+    background: #111; /* Fond encore plus sombre */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+.site-title {
+    font-size: 3rem;
+    font-weight: bold;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.site-title span {
+    color: #ffcc00; /* Accent doré */
+    text-shadow: 2px 2px 5px rgba(255, 204, 0, 0.7);
+    font-style: italic;
+}
+
+/* Section Bienvenue */
+.welcome {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.welcome h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ffcc00; /* Accent doré */
+}
+
+.welcome p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+}
+
+/* Section des services */
+.services {
+    padding: 40px 0;
+}
+
+.service-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.service-card {
+    background: #222; /* Fond sombre pour les cartes */
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    width: calc(33% - 20px); /* Trois cartes par ligne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.service-card i {
+    color: #ffcc00; /* Couleur dorée pour les icônes */
+    margin-bottom: 15px;
+    font-size: 3rem;
+}
+
+.service-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.service-card p {
+    font-size: 1rem;
+    line-height: 1.5;
+    margin: 10px 0;
+}
+
+.service-card .price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #ffcc00;
+}
+
+/* Boutons */
+.btn {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #ffcc00;
+    color: #000;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.btn:hover {
+    background: #e6b800;
+}
+
+/* Section de commande */
+.order {
+    padding: 40px 0;
+    text-align: center;
+}
+
+.order-summary {
+    background: #222;
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: left;
+    color: #fff;
+}
+
+.order-summary h3 {
+    font-size: 1.8rem;
+    color: #ffcc00;
+    margin-bottom: 10px;
+}
+
+.order-summary p {
+    font-size: 1rem;
+    line-height: 1.6;
+    margin: 5px 0;
+}
+
+/* Méthodes de contact */
+.contact-methods a {
+    color: #ffcc00;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.contact-methods a:hover {
+    text-decoration: underline;
+}
+
+/* Pied de page */
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background: #111;
+    color: #fff;
+}
+
+footer .social-links a {
+    color: #ffcc00;
+    margin: 0 10px;
+    font-size: 2rem;
+    transition: color 0.3s ease;
+}
+
+footer .social-links a:hover {
+    color: #e6b800;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .service-card {
+        width: calc(50% - 20px); /* Deux cartes par ligne sur les écrans moyens */
+    }
+}
+
+@media (max-width: 480px) {
+    .service-card {
+        width: 100%; /* Une carte par ligne sur les petits écrans */
+    }
+
+    .btn {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+}

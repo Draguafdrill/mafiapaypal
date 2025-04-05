@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mafia PayPal - Propose des virements PayPal sécurisés et rapides.">
+  <title>Mafia PayPal</title>
+  <!-- Lien vers le fichier CSS -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet"> <!-- Font Awesome -->
+</head>
+<body>
+  <!-- En-tête avec le nom du site -->
+  <header>
+    <div class="container">
+      <h1 class="site-title">
+        <img src="https://www.paypalobjects.com/webstatic/icon/pp258.png" alt="Logo PayPal" style="height: 30px; vertical-align: middle;"> 
+        <span>MAFIA PAYPAL</span>
+      </h1>
+    </div>
+  </header>
+  <!-- Section Bienvenue -->
+  <section id="welcome" class="welcome">
+    <div class="container">
+      <h2>Bienvenue 👀</h2>
+      <p><strong>Découvrez nos services de virements PayPal sécurisés et rapides.</strong> Merci de tout lire 🌐</p>
+      <p><strong>Mafia PayPal</strong> vous permet d'envoyer ou de recevoir des fonds PayPal en toute simplicité via des comptes cracker depuis le darknet.</p>
+      <h3>- Y’a-t-il des risques ?</h3>
+      <p>Aucun risque, nos transactions sont sécurisées et anonymes. Nous avons des centaines de clients satisfaits.</p>
+      <h3>Ça fonctionne partout ?</h3>
+      <p>Oui, nos virements PayPal fonctionnent partout dans le monde 🌍.</p>
+    </div>
+  </section>
+
+  <!-- Section des virements -->
+  <section id="services" class="services">
+    <div class="container">
+      <h2>Nos Virements PayPal</h2>
+      <div class="service-grid">
+        <!-- Virement LIVE -->
+        <div class="service-card">
+          <i class="fas fa-money-check-alt fa-3x"></i> <!-- Icône pour le virement -->
+          <h3>Virement LIVE</h3>
+          <p>Recevez jusqu'à <strong>1500€</strong> sur votre compte PayPal en moins de <strong>30 minutes</strong>.</p>
+          <p class="price">Prix : <span>150€</span></p>
+          <button class="btn btn-secondary" onclick="showSummary('Virement LIVE', 'Recevez jusqu\'à 1500€ sur votre compte PayPal en moins de 30 minutes.', '150€')">Commander</button>
+        </div>
+        <!-- Virement Standard -->
+        <div class="service-card">
+          <i class="fas fa-money-check-alt fa-3x"></i> <!-- Icône pour le virement -->
+          <h3>Virement Standard</h3>
+          <p>Recevez jusqu'à <strong>2500€</strong> sur votre compte PayPal en moins de <strong>30 minutes</strong>.</p>
+          <p class="price">Prix : <span>250€</span></p>
+          <button class="btn btn-secondary" onclick="showSummary('Virement Standard', 'Recevez jusqu\'à 2500€ sur votre compte PayPal en moins de 30 minutes.', '250€')">Commander</button>
+        </div>
+        <!-- Virement Premium -->
+        <div class="service-card">
+          <i class="fas fa-money-check-alt fa-3x"></i> <!-- Icône pour le virement -->
+          <h3>Virement Premium</h3>
+          <p>Recevez jusqu'à <strong>3500€</strong> sur votre compte PayPal en moins de <strong>30 minutes</strong>.</p>
+          <p class="price">Prix : <span>300€</span></p>
+          <button class="btn btn-secondary" onclick="showSummary('Virement Premium', 'Recevez jusqu\'à 3500€ sur votre compte PayPal en moins de 30 minutes.', '300€')">Commander</button>
+        </div>
+        <!-- Virement VIP -->
+        <div class="service-card">
+          <i class="fas fa-money-check-alt fa-3x"></i> <!-- Icône pour le virement -->
+          <h3>Virement VIP</h3>
+          <p>Recevez jusqu'à <strong>5000€</strong> sur votre compte PayPal en moins de <strong>30 minutes</strong>.</p>
+          <p class="price">Prix : <span>700€</span></p>
+          <button class="btn btn-secondary" onclick="showSummary('Virement VIP', 'Recevez jusqu\'à 5000€ sur votre compte PayPal en moins de 30 minutes.', '700€')">Commander</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Section de commande -->
+  <section id="order" class="order">
+    <div class="container">
+      <h2>Résumé de votre commande</h2>
+      <div id="order-summary" class="order-summary">
+        <p>Sélectionnez un service pour voir le résumé ici.</p>
+      </div>
+      <p>Pour commander :</p>
+      <ol>
+        <li>Faites une capture d'écran de cette section de la page.</li>
+        <li>Envoyez la capture d'écran à l'un des contacts ci-dessous :</li>
+      </ol>
+      <p><strong>⚠️ Veuillez contacter uniquement si c'est pour une commande. Merci !</strong></p>
+      <div class="contact-methods">
+        <p><i class="fab fa-whatsapp"></i> <strong>WhatsApp :</strong> <a href="https://wa.me/447943800251" target="_blank">Cliquez ici</a></p>
+        <p><i class="fab fa-telegram"></i> <strong>Telegram :</strong> <a href="https://t.me/Speedpaypal1" target="_blank">Cliquez ici</a></p>
+        <p><i class="fab fa-snapchat"></i> <strong>Snapchat :</strong> <a href="https://www.snapchat.com/add/speedpaypal3" target="_blank">Cliquez ici</a></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pied de page -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 Mafia PayPal. Tous droits réservés.</p>
+    </div>
+  </footer>
+
+  <!-- Script JavaScript -->
+  <script>
+    /**
+     * Affiche le résumé du service sélectionné dans la section "Résumé de votre commande".
+     * @param {string} title - Le titre du service.
+     * @param {string} description - La description du service.
+     * @param {string} price - Le prix du service.
+     */
+    function showSummary(title, description, price) {
+      const summaryDiv = document.getElementById('order-summary');
+      summaryDiv.innerHTML = `
+        <h3>${title}</h3>
+        <p>${description}</p>
+        <p><strong>Prix :</strong> ${price}</p>
+      `;
+      // Scrolle automatiquement vers la section de commande
+      document.getElementById('order').scrollIntoView({ behavior: 'smooth' });
+    }
+  </script>
+</body>
+</html>
